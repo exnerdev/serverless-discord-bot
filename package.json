@@ -1,0 +1,28 @@
+{
+    "name": "serverless-discord-bot",
+    "description": "Create Discord Bots Serverlessly via Cloudflare Workers",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "dev": "wrangler dev",
+        "register": "tsx src/register.ts",
+        "format-check": "prettier . --check",
+        "format": "prettier . --write",
+        "deploy": "wrangler deploy",
+        "cf-typegen": "wrangler types",
+        "prepare": "husky"
+    },
+    "devDependencies": {
+        "@types/node": "^24.0.3",
+        "dotenv": "^16.5.0",
+        "husky": "^9.1.7",
+        "prettier": "^3.5.3",
+        "tsx": "^4.20.3",
+        "typescript": "^5.8.3",
+        "wrangler": "^4.20.1"
+    },
+    "dependencies": {
+        "discord-api-types": "^0.38.12",
+        "discord-interactions": "^4.3.0"
+    }
+}
